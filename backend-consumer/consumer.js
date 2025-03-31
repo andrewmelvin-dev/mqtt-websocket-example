@@ -22,7 +22,7 @@ mqttClient.on('connect', () => {
 // Define the MQTT message handler that will receive topic updates
 mqttClient.on('message', (topic, message) => {
 	if (topic === MQTT_TOPIC) {
-    log('MQTT-Consumer', `Update received: [${message.toString()}]`);
+		log('MQTT-Consumer', `Update received: [${message.toString()}]`);
 
 		// Broadcast the updates to all connected WebSocket clients
 		clients.forEach(client => {

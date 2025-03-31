@@ -26,7 +26,7 @@ export default function DevicesMap({ devices, onSelectDevice } : DevicesMapProps
 	return (
 		<Box sx={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'grey.200', borderRadius: 2 }}>
 			<Box sx={{ padding: '1em', height: '100%' }}>
-	      <Typography variant='h4' gutterBottom color='text.primary' sx={{ padding: '10px' }}>Device Map</Typography>
+				<Typography variant='h4' gutterBottom color='text.primary' sx={{ padding: '10px' }}>Device Map</Typography>
 				<div style={{ position: 'relative' }}>
 					<img src='images/map.webp' alt='Map' style={{ maxWidth: '100%', maxHeight: '100%', borderRadius: 8 }} />
 					{renderedDevices}

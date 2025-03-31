@@ -59,29 +59,29 @@ export default function App() {
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded', },
 			body: formData.toString()
 		})
-    .then(response => {
-      if (response.ok) {
-        setSimulatorRunning(true);
-        console.log('Simulator started successfully');
-      } else {
-        console.error('Failed to start simulator', response.status);
-      }
-    })
-    .catch(error => { console.error('Request failed', error); });		
+		.then(response => {
+			if (response.ok) {
+				setSimulatorRunning(true);
+				console.log('Simulator started successfully');
+			} else {
+				console.error('Failed to start simulator', response.status);
+			}
+		})
+		.catch(error => { console.error('Request failed', error); });		
 	};
 
 	// Define the handler function for stopping the simulator
 	const handleSimulatorStop = () => {
 		fetch(API_STOP, { method: 'POST' })
-    .then(response => {
-      if (response.ok) {
-        setSimulatorRunning(false);
-        console.log('Simulator stopped successfully');
-      } else {
-        console.error('Failed to stop simulator', response.status);
-      }
-    })
-    .catch(error => { console.error('Request failed', error); });		
+		.then(response => {
+			if (response.ok) {
+				setSimulatorRunning(false);
+				console.log('Simulator stopped successfully');
+			} else {
+				console.error('Failed to stop simulator', response.status);
+			}
+		})
+		.catch(error => { console.error('Request failed', error); });		
 	};
 
 	const handleSelectDeviceOnMap = (id: number) => {
@@ -106,14 +106,14 @@ export default function App() {
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded', },
 			body: formData.toString()
 		})
-    .then(response => {
-      if (response.ok) {
-        console.log(`Update for device [${device.id}] was successful`);
-      } else {
-        console.error(`Update for device [${device.id}] failed:`, response.status);
-      }
-    })
-    .catch(error => { console.error('Request failed', error); });		
+		.then(response => {
+			if (response.ok) {
+				console.log(`Update for device [${device.id}] was successful`);
+			} else {
+				console.error(`Update for device [${device.id}] failed:`, response.status);
+			}
+		})
+		.catch(error => { console.error('Request failed', error); });		
 	};
 
 	return (
