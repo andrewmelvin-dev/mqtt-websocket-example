@@ -1,0 +1,15 @@
+{
+  "name": "backend-consumer",
+  "version": "1.0.0",
+  "main": "consumer.js",
+  "scripts": {
+    "start": "node consumer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mqtt": "^5.10.4"
+  }
+}

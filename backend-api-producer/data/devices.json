@@ -1,0 +1,272 @@
+[
+	{
+		"id": 1,
+		"name": "ZONE-1-SENSOR-0001",
+		"zone": "1",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.10, "y": 0.15 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 2,
+		"name": "ZONE-1-SENSOR-0002",
+		"zone": "1",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.11, "y": 0.10 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 3,
+		"name": "ZONE-1-SENSOR-0003",
+		"zone": "1",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.16, "y": 0.09 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 4,
+		"name": "ZONE-1-SENSOR-0004",
+		"zone": "1",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.22, "y": 0.10 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 5,
+		"name": "ZONE-1-SENSOR-0005",
+		"zone": "1",
+		"status": 1,
+		"subStatus": 1,
+		"position": { "x": 0.3, "y": 0.18 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 6,
+		"name": "ZONE-1-SENSOR-0006",
+		"zone": "1",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.55, "y": 0.19 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 7,
+		"name": "ZONE-1-SENSOR-0007",
+		"zone": "1",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.65, "y": 0.12 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 8,
+		"name": "ZONE-1-SENSOR-0008",
+		"zone": "1",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.79, "y": 0.21 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 9,
+		"name": "ZONE-1-SENSOR-0009",
+		"zone": "1",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.74, "y": 0.28 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 10,
+		"name": "ZONE-1-SENSOR-0010",
+		"zone": "1",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.68, "y": 0.29 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 101,
+		"name": "ZONE-2-SENSOR-0001",
+		"zone": "2",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.14, "y": 0.35 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 102,
+		"name": "ZONE-2-SENSOR-0002",
+		"zone": "2",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.35, "y": 0.37 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 103,
+		"name": "ZONE-2-SENSOR-0003",
+		"zone": "2",
+		"status": 2,
+		"subStatus": 3,
+		"position": { "x": 0.11, "y": 0.54 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 104,
+		"name": "ZONE-2-SENSOR-0004",
+		"zone": "2",
+		"status": 2,
+		"subStatus": 5,
+		"position": { "x": 0.24, "y": 0.53 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 105,
+		"name": "ZONE-2-SENSOR-0005",
+		"zone": "2",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.34, "y": 0.61 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 106,
+		"name": "ZONE-2-SENSOR-0006",
+		"zone": "2",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.14, "y": 0.84 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 107,
+		"name": "ZONE-2-SENSOR-0007",
+		"zone": "2",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.18, "y": 0.80 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 108,
+		"name": "ZONE-2-SENSOR-0008",
+		"zone": "2",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.24, "y": 0.78 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 109,
+		"name": "ZONE-2-SENSOR-0009",
+		"zone": "2",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.30, "y": 0.80 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 110,
+		"name": "ZONE-2-SENSOR-0010",
+		"zone": "2",
+		"status": 1,
+		"subStatus": 2,
+		"position": { "x": 0.40, "y": 0.86 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 201,
+		"name": "ZONE-3-SENSOR-0001",
+		"zone": "3",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.52, "y": 0.55 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 202,
+		"name": "ZONE-3-SENSOR-0002",
+		"zone": "3",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.65, "y": 0.50 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 203,
+		"name": "ZONE-3-SENSOR-0003",
+		"zone": "3",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.73, "y": 0.51 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 204,
+		"name": "ZONE-3-SENSOR-0004",
+		"zone": "3",
+		"status": 2,
+		"subStatus": 7,
+		"position": { "x": 0.80, "y": 0.55 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 205,
+		"name": "ZONE-3-SENSOR-0005",
+		"zone": "3",
+		"status": 2,
+		"subStatus": 7,
+		"position": { "x": 0.85, "y": 0.60 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 206,
+		"name": "ZONE-3-SENSOR-0006",
+		"zone": "3",
+		"status": 3,
+		"subStatus": 10,
+		"position": { "x": 0.84, "y": 0.70 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 207,
+		"name": "ZONE-3-SENSOR-0007",
+		"zone": "3",
+		"status": 3,
+		"subStatus": 8,
+		"position": { "x": 0.78, "y": 0.75 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 208,
+		"name": "ZONE-3-SENSOR-0008",
+		"zone": "3",
+		"status": 3,
+		"subStatus": 9,
+		"position": { "x": 0.72, "y": 0.76 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 209,
+		"name": "ZONE-3-SENSOR-0009",
+		"zone": "3",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.65, "y": 0.70 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	},
+	{
+		"id": 210,
+		"name": "ZONE-3-SENSOR-0010",
+		"zone": "3",
+		"status": 0,
+		"subStatus": 0,
+		"position": { "x": 0.59, "y": 0.65 },
+		"updated": "2025-03-29T12:00:00.000Z"
+	}
+]
