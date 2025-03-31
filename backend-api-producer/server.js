@@ -47,9 +47,9 @@ app.use(express.urlencoded({ extended: true }));	// Enable form data parsing
 
 // Enable CORS for frontend access
 app.use(cors({
-  origin: FRONTEND_ORIGIN,
-  methods: ['GET', 'POST', 'PATCH'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+	origin: FRONTEND_ORIGIN,
+	methods: ['GET', 'POST', 'PATCH'],
+	allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 // Setup the mqtt client
@@ -91,29 +91,29 @@ app.patch('/items/:id', (req, res) => {
 
 	// Search for the device to update
 	const index = devices.findIndex(device => device.id === id);
-  if (index < 0) {
+	if (index < 0) {
 		log('Express', 'Device not found');
-    return res.status(httpStatus.StatusCodes.BAD_REQUEST).json({ message: 'Device not found' });
-  }
+		return res.status(httpStatus.StatusCodes.BAD_REQUEST).json({ message: 'Device not found' });
+	}
 
-  // Define converters that will change the data type for properties that are not stored as strings
+	// Define converters that will change the data type for properties that are not stored as strings
 	const typeConverters = {
-    status: (value) => (value !== undefined ? parseInt(value) : undefined),
-    subStatus: (value) => (value !== undefined ? parseInt(value) : undefined),
-    position: (value) => (value !== undefined ? { "x": parseFloat(value.x ?? 0), "y": parseFloat(value.y ?? 0) } : undefined)
-  };
+		status: (value) => (value !== undefined ? parseInt(value) : undefined),
+		subStatus: (value) => (value !== undefined ? parseInt(value) : undefined),
+		position: (value) => (value !== undefined ? { "x": parseFloat(value.x ?? 0), "y": parseFloat(value.y ?? 0) } : undefined)
+	};
 
-  // Iterate over the properties in the request body
-  let device = {};
+	// Iterate over the properties in the request body
+	let device = {};
 	for (const key in req.body) {
-    if (req.body.hasOwnProperty(key) && req.body[key] !== undefined) {
-      // Apply the conversion function if it exists for this key
-      device[key] = typeConverters[key] ? typeConverters[key](req.body[key]) : req.body[key];
-    }
-  }
+		if (req.body.hasOwnProperty(key) && req.body[key] !== undefined) {
+			// Apply the conversion function if it exists for this key
+			device[key] = typeConverters[key] ? typeConverters[key](req.body[key]) : req.body[key];
+		}
+	}
 
-  // Merge the existing object with the new properties
-  devices[index] = { ...devices[index], ...device };
+	// Merge the existing object with the new properties
+	devices[index] = { ...devices[index], ...device };
 
 	// Publish the update to the MQTT topic
 	const updateJSON = JSON.stringify([{ id, updated: new Date().toISOString(), ...device }]);

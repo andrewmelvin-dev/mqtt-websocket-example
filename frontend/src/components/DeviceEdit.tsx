@@ -51,32 +51,32 @@ interface DeviceEditProps {
 }
 
 export default function DeviceEdit({ selectedDevice, onUpdate }: DeviceEditProps) {
-  const [state, dispatch] = useReducer(deviceReducer, selectedDevice || reducerInitialState);	
+	const [state, dispatch] = useReducer(deviceReducer, selectedDevice || reducerInitialState);	
 	let formJSX: JSX.Element | null = null;
 
-  // Ensure the status and sub status drop downs are repopulated when the selected device changes
+	// Ensure the status and sub status drop downs are repopulated when the selected device changes
 	useEffect(() => {
 		if (selectedDevice) {
 			dispatch({ type: 'UPDATE_ALL', id: selectedDevice.id, name: selectedDevice.name, status: selectedDevice.status, subStatus: selectedDevice.subStatus });
 		}
-  }, [selectedDevice]);
+	}, [selectedDevice]);
 
-  // Define a handler for a field change
+	// Define a handler for a field change
 	const handleInputChange = (property: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
-    dispatch({ type: 'UPDATE_INPUT', property: property, value: event.target.value });
+		dispatch({ type: 'UPDATE_INPUT', property: property, value: event.target.value });
 	};
 	
 	// Define a handler for a status change
-  const handleStatusChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const newStatus = event.target.value as DeviceStatus;
+	const handleStatusChange = (event: React.ChangeEvent<{ value: unknown }>) => {
+		const newStatus = event.target.value as DeviceStatus;
 		dispatch({ type: 'UPDATE_STATUS', status: newStatus, subStatus: DeviceSubStatus.NONE });
-  };
+	};
 
-  // Define a handler for a sub status change
-  const handleSubStatusChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const newSubStatus = event.target.value as number;
+	// Define a handler for a sub status change
+	const handleSubStatusChange = (event: React.ChangeEvent<{ value: unknown }>) => {
+		const newSubStatus = event.target.value as number;
 		dispatch({ type: 'UPDATE_SUB_STATUS', subStatus: newSubStatus });
-  };
+	};
 
 	// Define a handler for the quick status change buttons
 	const handleStatusButton = (status: DeviceStatus, subStatus: DeviceSubStatus) => {
@@ -103,14 +103,14 @@ export default function DeviceEdit({ selectedDevice, onUpdate }: DeviceEditProps
 				<TextField label='Name' type='string' size='small' value={state.name} onChange={handleInputChange('name')}/>
 				<Box sx={{ display: 'flex', gap: 2 }}>
 					<TextField select label='Status' size='small' value={state.status} onChange={handleStatusChange} sx={{ width: '40%', textAlign: 'left' }}>
-          {statusOptions.map((option) => (
-            <MenuItem key={option.value} value={option.value}>{option.label}</MenuItem>
-          ))}
+					{statusOptions.map((option) => (
+						<MenuItem key={option.value} value={option.value}>{option.label}</MenuItem>
+					))}
 					</TextField>
 					<TextField select label='Sub Status' size='small' value={state.subStatus} onChange={handleSubStatusChange} sx={{ width: '60%', textAlign: 'left' }}>
-          {subStatusOptions.map((option) => (
-            <MenuItem key={option.value} value={option.value}>{option.label}</MenuItem>
-          ))}
+					{subStatusOptions.map((option) => (
+						<MenuItem key={option.value} value={option.value}>{option.label}</MenuItem>
+					))}
 					</TextField>
 				</Box>
 				<Box sx={{ display: 'flex', gap: 2 }}>

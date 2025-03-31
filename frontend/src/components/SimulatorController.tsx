@@ -38,10 +38,10 @@ interface SimulatorControllerProps {
 export default function SimulatorController({ onSimulatorStart, onSimulatorStop, simulatorRunning }: SimulatorControllerProps) {
 	const [state, dispatch] = useReducer(simulatorControllerReducer, simulatorControllerInitialState);
 
-  // Define a handler for a change to an input field
+	// Define a handler for a change to an input field
 	const handleInputChange = (property: keyof SimulatorControllerState) => (event: React.ChangeEvent<HTMLInputElement>) => {
-    dispatch({ type: 'UPDATE', property: property, value: event.target.value });
-  };
+		dispatch({ type: 'UPDATE', property: property, value: event.target.value });
+	};
 
 	return (
 		<Card>

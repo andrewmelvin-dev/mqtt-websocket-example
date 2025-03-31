@@ -22,11 +22,11 @@ export default function DeviceIcon({ device }: DeviceIconProps) {
 	let sensorColor: string = 'white';
 	let subStatusJSX: JSX.Element | null = null;
 
-  const subStatusStyle: React.CSSProperties = {
-    position: 'absolute',
-    left: '7px',
-    top: '-6px',
-  };
+	const subStatusStyle: React.CSSProperties = {
+		position: 'absolute',
+		left: '7px',
+		top: '-6px',
+	};
 	
 	switch (device.status) {
 		case DeviceStatus.ALERT:
@@ -76,9 +76,9 @@ export default function DeviceIcon({ device }: DeviceIconProps) {
 	}
 
 	return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: 30, height: 30, borderRadius: '50%', backgroundColor }}>
-      <SensorsIcon sx={{ color: sensorColor, fontSize: 24 }} />
+		<Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: 30, height: 30, borderRadius: '50%', backgroundColor }}>
+			<SensorsIcon sx={{ color: sensorColor, fontSize: 24 }} />
 			{subStatusJSX}
-    </Box>
+		</Box>
 	);
 }
